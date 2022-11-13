@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="dis" content="">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100%;
+            height: 559px;
+            /* background-color: aquamarine; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .mini1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 25%;
+            height: 490px;
+            margin-right: 20px;
+            border-top-left-radius: 53px;
+            border-bottom-left-radius: 53px;
+            cursor: pointer;
+            margin-top: 240px;
+            background-color: #f5efef;
+            /* border-top-right-radius: 144px;
+            border-bottom-left-radius: 20px; */
+
+        }
+
+        .fb,
+        .wtsapp,
+        .insta,
+        .twitter {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 77%;
+            margin-top: 55px;
+            height: 154px;
+            /* border-radius: 10px; */
+            background-color: rgba(255, 255, 255, 0.995);
+        }
+
+        .fb:hover,
+        .wtsapp:hover,
+        .insta:hover,
+        .twitter:hover {
+            box-shadow: 0 1px 6px rgb(65, 178, 123);
+        }
+
+        .fb img,
+        .wtsapp img,
+        .insta img,
+        .twitter img {
+            width: 31%;
+            margin-top: -40px;
+            border-radius: 1000px;
+            /* border: 3px solid white; */
+            height: 76px;
+        }
+
+        .wtsapp a,
+        .insta a,
+        .twitter a {
+            text-decoration: none;
+            color: white;
+            /* border: 5px solid blanchedalmond; */
+            background-color: black;
+            padding: 7px 70px 7px 70px;
+            font-size: 18px;
+            border-radius: 30px;
+        }
+
+        .wtsapp a:hover {
+            border: 2px solid #1877f2;
+        }
+
+        .twitter a:hover {
+            border: 2px solid #5aa8e3;
+        }
+
+        .insta a:hover {
+            border: 2px solid #E1306C;
+        }
+
+        .mini1:hover,
+        .mini2:hover,
+        .mini3:hover {
+            box-shadow: 0 1px 6px rgb(246 79 79);
+        }
+
+        .mini3 {
+            width: 25%;
+            height: 490px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            margin-top: 240px;
+            border-top-right-radius: 53px;
+            border-bottom-right-radius: 53px;
+            background-color: #f5efef;
+            cursor: pointer;
+            /* border-top-left-radius: 144px;
+            border-bottom-right-radius: 20px; */
+
+        }
+
+        .background::before {
+            content: " ";
+            position: absolute;
+            width: 100%;
+            height: 113%;
+            background: url(./photo-1461749280684-dccba630e2f6.jpg) no-repeat center center/cover;
+            z-index: -7;
+            opacity: 0.3;
+        }
+
+        .background {
+            width: 100%;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #c1d8e6;
+            border-top-right-radius: 144px;
+            border-top-left-radius: 144px;
+        }
+
+        /* .background:hover{
+            box-shadow: 0 1 rgb(246 79 79);
+        } */
+
+        .mini2 {
+            width: 25%;
+            height: 645px;
+            margin-top: 97px;
+            margin-right: 20px;
+            background-color: #f5efef;
+            cursor: pointer;
+            border-top-left-radius: 144px;
+            border-top-right-radius: 144px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+
+
+        /* .mini1,
+        .mini2,
+        .mini3 {
+            border: 2px solid red;
+        } */
+
+        .background img {
+            width: 43%;
+            margin-top: 68px;
+            border-radius: 1000px;
+            border: 3px solid white;
+            height: 138px;
+
+        }
+
+        .background img:hover {
+            border: 3px solid rgb(58, 186, 195);
+        }
+
+        .data {
+            width: 79%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 155px;
+            margin-top: 70px;
+            /* background-color: palegreen; */
+        }
+
+        .fb {
+            margin-top: 0px;
+        }
+
+        .fb h3,
+        .insta h3,
+        .twitter h3,
+        .wtsapp h3 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 12px 0px 11px 0px;
+        }
+
+        .gmail {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 21px 2px 2px 2px;
+            width: 20%;
+            height: 30px;
+        }
+
+        .gmail a:hover {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="mini1">
+            <div class="fb" style="height: 240px;">
+                <img src="./wts.png" alt="">
+                <h3 style="margin: 2px 0px 0px 0px ;">HQ</h3>
+                <p style="padding: 1px 1px 1px 1px ; margin-top:0px;">whatsapp contact</p>
+                <img style="border-radius:0px ;width: 60%; height: 130px; margin-top: -7px;" src="./QR code.png" alt="">
+
+            </div>
+            <div class="wtsapp" style="height: 155px;">
+                <img src="./fb.png" alt="">
+                <h3>Hammad Qureshi</h3>
+                <a style="background-color: #1877f2;" href="">Facebook</a>
+            </div>
+        </div>
+        <div class="mini2">
+            <div class="background">
+                <img src="./iy.jpg" alt="">
+            </div>
+
+            <div class="data">
+                <h3
+                    style="margin: 5px 0px 10px 0px ; font-size: 24px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+                    Hammad Ahmad</h3>
+                <p style="margin-top: -6px; font-family: Georgia, 'Times New Roman', Times, serif;">Web Designer</p>
+                <p style="margin: 0px 7px 4px 7px ; font-family: 'Times New Roman', Times, serif;">I am IT Student
+                    currantly working on web development and java , i
+                    am doing <b>BS in Computer Science</b> from Kohat university of Science and technology kohat , Kpk ,
+                    Pakistan. Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.lorem2 Lorem, ipsum. consectetur
+                    adipisicing elit. Quod, re adipisicing elit. Nam quasi est delectus. Lorem, ipsum dolor sit amet
+                    consectetur adipisicing elit. Molestias a similique ipsum fuga, error nihil?</p>
+                <div class="gmail">
+                    <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">hammadqureshi447@gmail.com</a>
+                    <a href="">hamadqur447@gamil.com</a>
+                </div>
+            </div>
+        </div>
+        <div class="mini3">
+            <div class="insta">
+                <img src="./insta.png" alt="">
+                <h3>@hammad.447</h3>
+                <a style="background-color: #E1306C ;" href="">Instagram</a>
+            </div>
+            <div class="twitter">
+                <img src="./twetter.png" alt="">
+                <h3>@HQ1879</h3>
+                <a style="background-color: #5aa8e3;" href="">Twitter</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
